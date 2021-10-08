@@ -14,22 +14,16 @@ You can pass your Bark key by creating a file named `barkKey.py` with a single l
 barkKey = "Your_Bark_Key"
 ```
 
-Then add execution permission to the script by
-
-```shell
-chmod +x ./script.sh
-```
-
-
-
 ## Crontab Setup
 
 Use `crontab -e` to setup crontab, add these lines
 
 ```shell
-*/5 11-13 * * 1-5 /home/user/path/to/script
+*/5 11-16 * * 1-5 /home/lili/anaconda3/bin/python /home/lili/HKUSTeatingNotify/\
+main.py
 # every 5th min at each hour of 11:00 to 13:00 at every weekday
-*/5 17-18 * * 1-5 /home/user/path/to/script
+*/5 17-19 * * 1-5 /home/lili/anaconda3/bin/python /home/lili/HKUSTeatingNotify/\
+main.py
 # every 5th min at each hour of 17:00 to 18:00 at every weekday
 ```
 
