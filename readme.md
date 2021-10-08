@@ -16,7 +16,16 @@ barkKey = "Your_Bark_Key"
 
 
 
-## Cron Setup
+## Crontab Setup
 
+Use `crontab -e` to setup crontab, add these lines
 
+```shell
+*/5 11-13 * * 1-5 /home/user/path/to/script
+# every 5th min at each hour of 11:00 to 13:00 at every weekday
+*/5 17-18 * * 1-5 /home/user/path/to/script
+# every 5th min at each hour of 17:00 to 18:00 at every weekday
+```
+
+for reference see [corntab guru](https://crontab.guru/examples.html).
 
