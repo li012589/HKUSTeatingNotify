@@ -14,6 +14,12 @@ You can pass your Bark key by creating a file named `barkKey.py` with a single l
 barkKey = "Your_Bark_Key"
 ```
 
+Then add execution permission to the script by
+
+```shell
+chmod +x ./script.sh
+```
+
 
 
 ## Crontab Setup
