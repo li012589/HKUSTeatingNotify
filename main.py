@@ -46,7 +46,8 @@ def main():
             return -1
     if rev <= allowedPeopleLessThan:
         while rev != 200:
-            response = requests.get(barkURL)
+            URL = barkURL + ": " + str(rev) + " people."
+            response = requests.get(URL)
             rev = response.json()["code"]
 
 if __name__ == "__main__":
